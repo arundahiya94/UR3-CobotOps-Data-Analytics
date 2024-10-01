@@ -41,7 +41,7 @@ Once downloaded, place the dataset in the `data/` directory of this project.
 3. **Download the dataset**: 
     Follow the dataset instructions, and place the data files in the data/ directory.
 
-4. **Project Structure**:
+### Project Structure
     ```bash
     UR3-CobotOps-ML-Project/
     │
