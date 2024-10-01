@@ -42,7 +42,7 @@ Once downloaded, place the dataset in the `data/` directory of this project.
     Follow the dataset instructions, and place the data files in the data/ directory.
 
 ### Project Structure
-    ```bash
+
     UR3-CobotOps-ML-Project/
     │
     ├── data/                     # Placeholder for dataset or instructions to access it
