@@ -31,12 +31,12 @@ Once downloaded, place the dataset in the `data/` directory of this project.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/UR3-CobotOps-ML-Project.git
-   cd UR3-CobotOps-ML-Project
+   git clone https://github.com/yourusername/UR3-CobotOps-Data-Analytics.git
+   cd UR3-CobotOps-Data-Analytics
 
 2. **Install the required dependencies**:
     ```bash
-    Install the required dependencies:
+    pip install -r requirements.txt
 
 3. **Download the dataset**: 
     Follow the dataset instructions, and place the data files in the data/ directory.
@@ -70,8 +70,42 @@ Once downloaded, place the dataset in the `data/` directory of this project.
     │
     └── LICENSE                    # License file (optional, depending on how you want to share)
 
-5. **Usage**:
-    To run the project, follow the steps below:
-    5.1 *Preprocess the dataset*: This script cleans and preprocesses the dataset for clustering.
-    ```bash
+
+### Usage
+
+To run the project, follow the steps below:
+
+1. **Preprocess the dataset**: This script cleans and preprocesses the dataset for clustering.
     python src/preprocessing.py
+
+2. **Run the clustering analysis**: This script applies clustering techniques (e.g., k-means, hierarchical) on the preprocessed data.
+    python src/clustering.py
+
+3. **Evaluate the results**: The evaluation script assesses the performance of the clustering models and generates visualizations.
+    python src/evaluation.py
+
+4. **View the analysis results**: Results, including any plots and performance metrics, will be saved in the reports/ folder.
+
+### Results
+
+1. The analysis uncovered distinct clusters in cobot operational behavior, which can be leveraged to optimize task scheduling and predict maintenance needs.
+2. Detailed reports and plots can be found in the reports/ folder.
+
+### Contributing
+
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (git checkout -b feature-branch)
+3. Commit your changes (git commit -am 'Add new feature')
+4. Push the branch (git push origin feature-branch)
+5. Create a pull request
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+### Acknowledgments
+
+1. Special thanks to my university for providing the UR3 CobotOps dataset.
+2. Inspiration for this project comes from various research papers on collaborative robot operations and machine learning techniques.
