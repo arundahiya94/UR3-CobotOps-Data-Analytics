@@ -4,4 +4,5 @@ This dataset supports research in fault detection, predictive maintenance, and o
 
 The Data set can be found at : https://archive.ics.uci.edu/dataset/963/ur3+cobotops
 
+Credits:
 Tyrovolas, M., Aliev, K., Antonelli, D., & Stylios, C. (2024). UR3 CobotOps [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5J891.
