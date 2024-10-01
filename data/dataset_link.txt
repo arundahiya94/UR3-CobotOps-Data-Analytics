@@ -1,0 +1,7 @@
+The UR3 CobotOps Dataset is an essential collection of multi-dimensional time-series data from the UR3 cobot, offering insights into operational parameters and faults for machine learning in robotics and automation. 
+It features electrical currents, temperatures, speeds across joints (J0-J5), gripper current, operation cycle count, protective stops, and grip losses, collected via MODBUS and RTDE protocols. 
+This dataset supports research in fault detection, predictive maintenance, and operational optimization, providing a detailed operational snapshot of a leading cobot model for industrial applications
+
+The Data set can be found at : https://archive.ics.uci.edu/dataset/963/ur3+cobotops
+
+Tyrovolas, M., Aliev, K., Antonelli, D., & Stylios, C. (2024). UR3 CobotOps [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5J891.
