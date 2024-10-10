@@ -1,0 +1,14 @@
+2024-10-11 01:35:15,175 - INFO - Starting the project execution.
+2024-10-11 01:35:15,175 - INFO - Current working directory: D:\git\UR3-CobotOps-Data-Analytics
+2024-10-11 01:35:16,321 - INFO - Data loaded from D:/git/UR3-CobotOps-Data-Analytics/data/dataset.xlsx
+2024-10-11 01:35:16,495 - INFO - Data preprocessed (power transform, outlier removal, normalization).
+2024-10-11 01:36:24,897 - INFO - K-Means clustering completed. Silhouette Score: 0.5134805614179859
+2024-10-11 01:36:27,789 - INFO - K-Means clusters plotted.
+2024-10-11 01:36:27,790 - INFO - Model saved as models/kmeans_model.pkl
+2024-10-11 01:37:19,788 - INFO - Starting the project execution.
+2024-10-11 01:37:19,788 - INFO - Current working directory: D:\git\UR3-CobotOps-Data-Analytics
+2024-10-11 01:37:20,799 - INFO - Data loaded from D:/git/UR3-CobotOps-Data-Analytics/data/dataset.xlsx
+2024-10-11 01:37:20,992 - INFO - Data preprocessed (power transform, outlier removal, normalization).
+2024-10-11 01:37:24,308 - INFO - K-Means clustering completed. Silhouette Score: 0.5134805614179859
+2024-10-11 01:37:26,751 - INFO - K-Means clusters plotted.
+2024-10-11 01:37:26,753 - INFO - Model saved as models/kmeans_model.pkl
