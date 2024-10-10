@@ -1,19 +1,19 @@
 import unittest
+from src.preprocessing import clean_data, normalize_data
 import pandas as pd
-from src.preprocessing import clean_data
 
 class TestPreprocessing(unittest.TestCase):
-
+    
     def test_clean_data(self):
-        """Test if clean_data correctly drops NaNs and unnecessary columns."""
-        data = pd.DataFrame({
-            'A': [1, 2, None, 4],
-            'B': [None, 2, 3, 4],
-            'Timestamp': ['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04']
-        })
-        cleaned_data = clean_data(data)
-        self.assertEqual(cleaned_data.isna().sum().sum(), 0)
-        self.assertNotIn('Timestamp', cleaned_data.columns)
+        df = pd.DataFrame({'grip_lost': ['1', '0'], 'Robot_ProtectiveStop': ['1', '0'], 'Temperature': [20, None]})
+        clean_df = clean_data(df)
+        self.assertEqual(len(clean_df), 1)
+
+    def test_normalize_data(self):
+        df = pd.DataFrame({'Temperature': [20, 30]})
+        norm_df = normalize_data(df, ['Temperature'])
+        self.assertTrue(norm_df['Temperature'].max() <= 1)
+        self.assertTrue(norm_df['Temperature'].min() >= 0)
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,25 +1,26 @@
-from src.preprocessing import load_data, clean_data, scale_data
-from src.clustering import run_clustering
-from src.evaluation import evaluate_clustering
-from src.utils import plot_correlation_heatmap, get_correlation_matrix
+from src.preprocessing import load_data, clean_data, normalize_data, apply_power_transform, remove_outliers
+from src.clustering import kmeans_clustering, hierarchical_clustering, dbscan_clustering, plot_clusters
+from src.utils import perform_pca
+import pandas as pd
 
-def main():
-    # Step 1: Load the data
-    data = load_data('data/raw/dataset.xlsx')
+if __name__ == "__main__":
+    # Load dataset
+    file_path = 'data/raw/dataset.xlsx'
+    df = load_data(file_path)
 
-    # Step 2: Clean and preprocess the data
-    cleaned_data = clean_data(data)
-    scaled_data = scale_data(cleaned_data)
+    # Preprocessing
+    df = clean_data(df)
+    columns_to_normalize = df.columns.difference(['grip_lost', 'Robot_ProtectiveStop'])
+    df = apply_power_transform(df, columns_to_normalize)
+    df = remove_outliers(df, columns_to_normalize)
+    df = normalize_data(df, columns_to_normalize)
 
-    # Step 3: Generate and plot the correlation matrix
-    corr_matrix = get_correlation_matrix(scaled_data)
-    plot_correlation_heatmap(corr_matrix)
+    # Dimensionality Reduction (PCA)
+    data_pca = perform_pca(df)
 
-    # Step 4: Run the clustering algorithm
-    clusters = run_clustering(scaled_data)
+    # K-Means Clustering
+    clusters, silhouette = kmeans_clustering(data_pca, 3)
+    print(f"K-Means Silhouette Score: {silhouette}")
+    plot_clusters(data_pca, clusters, "K-Means Clusters")
 
-    # Step 5: Evaluate the clustering performance
-    evaluate_clustering(clusters, scaled_data)
-
-if __name__ == '__main__':
-    main()
+    # Optional: Hierarchical or DBSCAN clustering can also be called here.

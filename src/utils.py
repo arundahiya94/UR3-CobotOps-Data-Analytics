@@ -1,12 +1,14 @@
-import seaborn as sns
+from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-def get_correlation_matrix(data):
-    """Calculate the correlation matrix."""
-    return data.corr()
+def perform_pca(df, n_components=2):
+    pca = PCA(n_components=n_components)
+    return pca.fit_transform(df)
 
-def plot_correlation_heatmap(corr_matrix, figsize=(20, 10)):
-    """Plot a heatmap of the correlation matrix."""
-    plt.figure(figsize=figsize)
-    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+def plot_correlation_matrix(df):
+    plt.figure(figsize=(12, 8))
+    correlation_matrix = df.corr()
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+    plt.title('Correlation Matrix')
     plt.show()
