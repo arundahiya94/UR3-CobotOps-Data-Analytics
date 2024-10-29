@@ -109,4 +109,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 1. Special thanks to my university for providing the UR3 CobotOps dataset.
 2. Inspiration for this project comes from various research papers on collaborative robot operations and machine learning techniques.
-3. 
+
