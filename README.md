@@ -16,7 +16,7 @@ This project explores the **UR3 CobotOps dataset** using machine learning techni
 
 The dataset used is the **UR3 CobotOps dataset**, which contains operational data from UR3 collaborative robots. Due to its size or licensing restrictions, the dataset is not included in this repository. You can download it from the following link:
 
-- [Download UR3 CobotOps Dataset](https://link-to-dataset.com)
+- [Download UR3 CobotOps Dataset](https://archive.ics.uci.edu/dataset/963/ur3+cobotops)
 
 Once downloaded, place the dataset in the `data/` directory of this project.
 
