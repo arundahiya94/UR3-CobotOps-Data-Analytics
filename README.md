@@ -45,11 +45,11 @@ Once downloaded, place the dataset in the `data/` directory of this project.
 
     UR3-CobotOps-ML-Project/
     │
-    ├── data/                     # Placeholder for dataset or instructions to access it
+    ├── data/                      # Placeholder for dataset or instructions to access it
     │   └── dataset_link.txt       # Text file with the link to the dataset if not included
     │
     ├── notebooks/                 # Jupyter notebooks for exploration and experimentation
-    │   └── exploration.ipynb      # Example notebook for data exploration
+    │   └── exploration.ipynb      # Notebook for data exploration
     │
     ├── src/                       # Source code for the project (scripts, models, etc.)
     │   ├── preprocessing.py       # Data cleaning and preprocessing code
@@ -62,13 +62,13 @@ Once downloaded, place the dataset in the `data/` directory of this project.
     │   └── plots/                 # Folder containing generated plots
     │
     ├── research_papers/           # Any relevant research papers or references
-    │   └── paper1.pdf             # Include research papers or a bibliography here
+    │   └── paper1.pdf             # Research papers
     │
     ├── requirements.txt           # List of dependencies for the project
     │
     ├── README.md                  # Project documentation
     │
-    └── LICENSE                    # License file (optional, depending on how you want to share)
+    └── LICENSE                    # License file
 
 
 ### Usage
